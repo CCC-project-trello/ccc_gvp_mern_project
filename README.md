@@ -25,24 +25,6 @@
 - JWT (Authentication)
 - bcrypt.js (Password hashing)
 
-## 📂 Project Structure
-taskify/
-│
-├── backend/ # Backend Express API
-│ ├── models/ # Mongoose schemas
-│ ├── routes/ # Express routes
-│ ├── server.js # App entry point
-│ ├── .env # Environment variables
-│ └── package.json
-│
-├── frontend/ # React Frontend
-│ ├── public/
-│ ├── src/ # Main React app files
-│ ├── README.md
-│ └── package.json
-│
-├── node_modules/ # Root dependencies (if any)
-├── README.md # Project overview
-├── package.json # Project-level metadata (if managing both client/server together)
+
 
 
