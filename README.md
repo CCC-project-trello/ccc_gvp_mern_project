@@ -25,6 +25,27 @@
 - JWT (Authentication)
 - bcrypt.js (Password hashing)
 
+---
+
+## 🚀 Features
+
+- 🔐 User authentication with hashed passwords (bcrypt) and JWT
+- ✏️ Add, edit, delete, and view tasks
+- 📋 Tasks stored in MongoDB Atlas
+- 💬 Error handling and form validations
+- 🎨 Responsive UI using modern frontend practices
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/taskify.git
+cd taskify
+
+
 
 
 
