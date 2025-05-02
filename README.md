@@ -45,10 +45,14 @@
 git clone https://github.com/YOUR_USERNAME/taskify.git
 cd taskify
 
+```
 ###2.Backend
-
+```bash
 cd backend
 npm install
+
+```
+
 
 
 
