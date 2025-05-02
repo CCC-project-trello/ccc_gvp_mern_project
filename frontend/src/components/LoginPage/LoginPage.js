@@ -94,8 +94,8 @@ const LoginPage = () => {
           <h4>Need Help?</h4>
           <p>Contact our team for support:</p>
           <ul>
-            <li><strong>Developer: Arya</strong> – <a href="mailto:arya.dev@example.com">arya.dev@example.com</a></li>
-            <li><strong>Maintainer: Jositha</strong> – <a href="mailto:Jositha@taskmanager.io">Jositha@taskmanager.io</a></li>
+            <li><strong>Dev Arya</strong> – <a href="mailto:arya.dev@example.com">arya.dev@example.com</a></li>
+            <li><strong>Project Maintainer</strong> – <a href="mailto:support@taskmanager.io">support@taskmanager.io</a></li>
           </ul>
         </div>
       </div>
