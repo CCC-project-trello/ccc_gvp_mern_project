@@ -1,5 +1,5 @@
 # ccc_gvp_mern_project
-# Trello Clone Project
+# Taskify Project
 
 ## Stack
 - Frontend: React.js, TailwindCSS, Axios
