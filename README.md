@@ -52,7 +52,14 @@ cd backend
 npm install
 
 ```
+### 3. Frontend Setup
+```bash
+cd ../frontend
+npm install
+npm start
 
+```
+This will start the React development server at http://localhost:3000.
 
 
 
