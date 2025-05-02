@@ -63,5 +63,15 @@ This will start the React development server at http://localhost:3000.
 
 
 
+```bash
+📝 License
+This project is licensed under the MIT License.
+
+```
+
+Built with ❤️ using MERN stack
+
+
+
 
 
