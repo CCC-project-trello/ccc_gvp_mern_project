@@ -1,0 +1,191 @@
+/* App container */
+.app {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Title styling */
+.board-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+/* Columns wrapper */
+.board-columns {
+  display: flex;
+  gap: 40px; /* Spacing between phases */
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 10px;
+}
+
+/* Each column */
+.board-column {
+  background-color: #2a2a40;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  min-width: 280px;
+  border: 1px solid #444;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Column title styling */
+.column-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #facc15;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+/* Task card styling */
+.task-card {
+  background-color: #383854;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Input + form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+input,
+select {
+  width: 250px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #ffffff; /* White background */
+  color: #000000;             /* Black text */
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #10b981;
+}
+
+/* Wrapper with animated cold background */
+.background-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: coldCycle 15s infinite alternate;
+  transition: background-color 1s ease;
+}
+
+/* Cold colors animation */
+@keyframes coldCycle {
+  0% { background-color: #0f172a; }
+  25% { background-color: #1e3a8a; }
+  50% { background-color: #334155; }
+  75% { background-color: #0369a1; }
+  100% { background-color: #475569; }
+}
+
+/* Task manager contrast zone (warm theme) */
+.task-manager {
+  background-color: #ef4444;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  transition: background-color 2s ease;
+  animation: warmPulse 15s infinite alternate;
+}
+
+/* Warm-to-cold cycle animation */
+@keyframes warmPulse {
+  0% { background-color: #ef4444; }
+  10% { background-color: #f97316; }
+  20% { background-color: #f59e0b; }
+  30% { background-color: #eab308; }
+  40% { background-color: #10b981; }
+  50% { background-color: #34d399; }
+  60% { background-color: #3b82f6; }
+  70% { background-color: #2563eb; }
+  80% { background-color: #1e3a8a; }
+  90% { background-color: #475569; }
+  100% { background-color: #0f172a; }
+}
+
+/* Green glow on update */
+.updated-glow {
+  animation: smoothBlink 1.5s ease-in-out;
+}
+
+@keyframes smoothBlink {
+  0% {
+    background-color: #383854;
+    box-shadow: none;
+    transform: scale(1);
+  }
+  30%,
+  70% {
+    background-color: #4ade80;
+    box-shadow: 0 0 12px #4ade80;
+    transform: scale(1.03);
+  }
+  100% {
+    background-color: #383854;
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
+
+/* Blue glow on add */
+.added-glow {
+  animation: smoothBlinkBlue 1.5s ease-in-out;
+}
+
+@keyframes smoothBlinkBlue {
+  0% {
+    background-color: #383854;
+    box-shadow: none;
+    transform: scale(1);
+  }
+  30%,
+  70% {
+    background-color: #3b82f6;
+    box-shadow: 0 0 12px #3b82f6;
+    transform: scale(1.03);
+  }
+  100% {
+    background-color: #383854;
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
+
+/* Fade out animation for removing */
+.fading-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}

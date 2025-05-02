@@ -1,0 +1,32 @@
+/* Task Card Styles */
+.card {
+    background-color: #383854;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Add the Glow effect */
+  .card.updated-glow {
+    animation: glowIn 1.5s ease-out;
+  }
+  
+  @keyframes glowIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+      box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+    }
+    50% {
+      opacity: 0.7;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+  }
+  
